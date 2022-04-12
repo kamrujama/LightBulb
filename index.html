@@ -8,11 +8,33 @@
     <Style>
         *{
             transition: all .5s ease-in-out;
+            padding : 0;
+            margin:  0;
         }
         body{
             text-align: center;
             padding: 50px;
             background: #e0e0e0;
+            box-sizing: border-box;
+        }
+
+        .bulb1{
+            height: 50vh;
+            width: 100%;
+            margin: 20px;
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+        }
+        .bulb2{
+            height: 50vh;
+            width: 100%;
+            margin: 20px;
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
         }
         h2{
             border-radius: 50px;
@@ -51,19 +73,26 @@
 <body>
     <!-- glow bulb using same button -->
 
-    <h2>Click the bulb to glow</h2>
-    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" onmouseover="changeCursor()" id="bulb" onclick="glow()">
-    <br>
-    <button  onclick="glow()" id="btn">Glow</button>
+    <div class="bulb1">
 
+        <h2>Click the bulb to glow</h2>
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" onmouseover="changeCursor()" id="bulb" onclick="glow()">
+        <br>
+        <button  onclick="glow()" id="btn">Glow</button>
+        
+    </div>
 
 
     <!-- glow bulb using separate button -->
 
-    <h2>Light Bulb using separate button</h2>
-    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" onmouseover="changeCursor()" id="bulb2" onclick="glow()">
-    <br>
-    <button  onclick="glowBulb()" id="btn2">Glow</button><button  onclick="turnOff()" id="btn2">Turn Off</button>
+    <div class="bulb2">
+
+        <h2>Light Bulb using separate button</h2>
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" onmouseover="changeCursor()" id="bulb2" onclick="glow()">
+        <br>
+        <button  onclick="glowBulb()" id="btn2">Glow</button><button  onclick="turnOff()" id="btn2">Turn Off</button>
+
+    </div>
 
  
 
